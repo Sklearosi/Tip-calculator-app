@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <img src="./images/logo.svg" alt="" id="splitter">
+
+    <div id="container">
+        <div id="first">
+            <div id="bill">
+                <p id="bill-t">Bill</p>
+                <input id="bill-input" type="number" placeholder="0">
+            </div>
+            <div id="tip-selection">
+                <p id="tip-selection-t">Select Tip %</p>
+                <div id="tips-div">
+                    <div class="tips" id="five">5%</div>
+                    <div class="tips" id="ten">10%</div>
+                    <div class="tips" id="fifteen">15%</div>
+                    <div class="tips" id="twentyfive">25%</div>
+                    <div class="tips" id="fifty">50%</div>
+                    <input id="custom" placeholder="Custom" type="number" class="tips"></input>
+                </div>
+            </div>
+            <div id="people">
+                <p id="people-p">Number of People</p>
+                <input type="number" placeholder="0" id="people-input">
+            </div>
+        </div>
+        <div id="second">
+            <div id="second-first">
+                <div id="tip-amount">
+                <p>Tip Amount</p>
+                <p>/ person</p>
+            </div>
+            <div id="numbers-per">$0.00</div>
+            </div>
+            <div id="second-second">
+                <div id="tip-amount">
+                    <p>Total</p>
+                    <p>/ person</p>
+                </div>
+                <div id="numbers">$0.00</div>
+            </div>
+            <button id="reset">RESET</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
