@@ -11,6 +11,8 @@ let custom = document.getElementById("custom")
 let reset = document.getElementById("reset")
 let z = 0
 
+
+
 five.addEventListener("click", () => {
     five.style.backgroundColor = "#26C2AE"
     ten.style.backgroundColor = "#00474B"
@@ -117,55 +119,62 @@ fifty.addEventListener("click", () => {
 
 
 bill.addEventListener("input", () => {
-    if ( z === 1) {
+    if ( z === 1 && person.value > 0 && bill.value > 0) {
         numbers.innerText = "$" + (bill.value * 5 / 100)
-    } else if(z === 2) {
+    } else if(z === 2 && person.value > 0 && bill.value > 0) {
         numbers.innerText = "$" + (bill.value * 10 / 100)
-    } else if(z === 3) {
+    } else if(z === 3 && person.value > 0 && bill.value > 0) {
         numbers.innerText = "$" + (bill.value * 15 / 100)
-    } else if(z === 4) {
+    } else if(z === 4 && person.value > 0 && bill.value > 0) {
         numbers.innerText = "$" + (bill.value * 25 / 100)
-    } else if(z === 5) {
+    } else if(z === 5 && person.value > 0 && bill.value > 0) {
         numbers.innerText = "$" + (bill.value * 50 / 100)
-    } else if (z === 6) {
+    } else if (z === 6 && person.value > 0 && bill.value > 0) {
         numbers.innerText = "$" + (bill.value * custom.value / 100)
     }
 
-    if ( z === 1 && person.value > 0) {
+    if ( z === 1 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 5 / 100 / person.value)
-    } else if(z === 2 && person.value > 0) {
+    } else if(z === 2 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 10 / 100 / person.value)
-    } else if(z === 3 && person.value > 0) {
+    } else if(z === 3 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 15 / 100 / person.value)
-    } else if(z === 4 && person.value > 0) {
+    } else if(z === 4 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 25 / 100 / person.value)
-    } else if(z === 5 && person.value > 0) {
+    } else if(z === 5 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 50 / 100 / person.value)
-    } else if(z === 6 && person.value > 0) {
+    } else if(z === 6 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * custom.value / 100 / person.value)
-    }
+    } 
 
     
 
 })
 
 person.addEventListener("input", () => {
-    if ( z === 1) {
+
+   
+   if ( z === 1 && person.value > 0 && bill.value > 0 ) {
         numbersPer.innerText = "$" + (bill.value * 5 / 100 / person.value)
-    } else if(z === 2) {
+    } else if(z === 2 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 10 / 100 / person.value)
-    } else if(z === 3) {
+    } else if(z === 3 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 15 / 100 / person.value)
-    } else if(z === 4) {
+    } else if(z === 4 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 25 / 100 / person.value)
-    } else if(z === 5) {
+    } else if(z === 5 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * 50 / 100 / person.value)
-    } else if(z === 6) {
+    } else if(z === 6 && person.value > 0 && bill.value > 0) {
         numbersPer.innerText = "$" + (bill.value * custom.value / 100 / person.value)
-    }
+    } 
+
 
     
+  
+    
+    
 })
+
 
 
 
@@ -218,6 +227,8 @@ reset.addEventListener("click", () => {
     numbers.innerText = "$0.00"
     numbersPer.innerText = "$0.00"
 }) 
+
+
 
 
 
